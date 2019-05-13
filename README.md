@@ -74,6 +74,20 @@ Connections that Authlib Loginpass contains:
 - [x] Yandex
 - [x] Twitch
 - [x] VK
+- [x] Authlib
+
+
+Client creation for Authlib server
+-----
+
+Client in auth server should be created as:
+-  Client name: whatever you want
+-  Client URI: http://192.168.1.xx:5000
+-  Allowed scope: profile
+-  Redirect URI: http://192.168.1.xx:8000/authlib/auth
+-  Allowed Grant Types: authorization_code
+-  Allowed Response Types: code
+-  Token Endpoint Auth Method: client secret basic
 
 
 Usage
@@ -85,6 +99,9 @@ examples for details.
 
 [Flask]: https://docs.authlib.org/en/latest/client/flask.html
 [Django]: https://docs.authlib.org/en/latest/client/django.html
+
+To run:
+
 
 License
 -------
